@@ -78,6 +78,7 @@ Partial Class Login
         '
         'btnCancel
         '
+        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancel.Font = New System.Drawing.Font("Kristen ITC", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.Location = New System.Drawing.Point(190, 141)
         Me.btnCancel.Name = "btnCancel"
@@ -88,6 +89,7 @@ Partial Class Login
         '
         'btnlog
         '
+        Me.btnlog.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnlog.Font = New System.Drawing.Font("Kristen ITC", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlog.Location = New System.Drawing.Point(310, 141)
         Me.btnlog.Name = "btnlog"
@@ -100,6 +102,7 @@ Partial Class Login
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.Location = New System.Drawing.Point(329, 200)
         Me.LinkLabel1.Name = "LinkLabel1"

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Main
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Main
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -31,11 +32,16 @@ Partial Class Main
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransactiomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SummaryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.pbLoan = New System.Windows.Forms.PictureBox()
+        Me.pbWithdraw = New System.Windows.Forms.PictureBox()
+        Me.pbDeposit = New System.Windows.Forms.PictureBox()
+        Me.pbManage = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.pbLoan, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbWithdraw, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDeposit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbManage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -91,41 +97,53 @@ Partial Class Main
         Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
         Me.SummaryToolStripMenuItem.Text = "Summary"
         '
-        'Button1
+        'pbLoan
         '
-        Me.Button1.Location = New System.Drawing.Point(37, 81)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Loan"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.pbLoan.BackColor = System.Drawing.Color.Transparent
+        Me.pbLoan.BackgroundImage = CType(resources.GetObject("pbLoan.BackgroundImage"), System.Drawing.Image)
+        Me.pbLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbLoan.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbLoan.Location = New System.Drawing.Point(318, 87)
+        Me.pbLoan.Name = "pbLoan"
+        Me.pbLoan.Size = New System.Drawing.Size(131, 118)
+        Me.pbLoan.TabIndex = 5
+        Me.pbLoan.TabStop = False
         '
-        'Button2
+        'pbWithdraw
         '
-        Me.Button2.Location = New System.Drawing.Point(158, 81)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Withdaw"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.pbWithdraw.BackColor = System.Drawing.Color.Transparent
+        Me.pbWithdraw.BackgroundImage = CType(resources.GetObject("pbWithdraw.BackgroundImage"), System.Drawing.Image)
+        Me.pbWithdraw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbWithdraw.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbWithdraw.Location = New System.Drawing.Point(502, 87)
+        Me.pbWithdraw.Name = "pbWithdraw"
+        Me.pbWithdraw.Size = New System.Drawing.Size(131, 118)
+        Me.pbWithdraw.TabIndex = 6
+        Me.pbWithdraw.TabStop = False
         '
-        'Button3
+        'pbDeposit
         '
-        Me.Button3.Location = New System.Drawing.Point(282, 81)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Deposit"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.pbDeposit.BackColor = System.Drawing.Color.Transparent
+        Me.pbDeposit.BackgroundImage = CType(resources.GetObject("pbDeposit.BackgroundImage"), System.Drawing.Image)
+        Me.pbDeposit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbDeposit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbDeposit.Location = New System.Drawing.Point(677, 87)
+        Me.pbDeposit.Name = "pbDeposit"
+        Me.pbDeposit.Size = New System.Drawing.Size(131, 118)
+        Me.pbDeposit.TabIndex = 7
+        Me.pbDeposit.TabStop = False
         '
-        'Button4
+        'pbManage
         '
-        Me.Button4.Location = New System.Drawing.Point(429, 81)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Manage"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.pbManage.BackColor = System.Drawing.Color.Transparent
+        Me.pbManage.BackgroundImage = CType(resources.GetObject("pbManage.BackgroundImage"), System.Drawing.Image)
+        Me.pbManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbManage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbManage.Location = New System.Drawing.Point(851, 87)
+        Me.pbManage.Name = "pbManage"
+        Me.pbManage.Size = New System.Drawing.Size(131, 118)
+        Me.pbManage.TabIndex = 8
+        Me.pbManage.TabStop = False
         '
         'Main
         '
@@ -133,16 +151,20 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1350, 707)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.pbManage)
+        Me.Controls.Add(Me.pbDeposit)
+        Me.Controls.Add(Me.pbWithdraw)
+        Me.Controls.Add(Me.pbLoan)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Main"
         Me.Text = "Lending Management System"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.pbLoan, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbWithdraw, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDeposit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbManage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -156,8 +178,9 @@ Partial Class Main
     Friend WithEvents SummaryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WithdrawToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents pbLoan As PictureBox
+    Friend WithEvents pbWithdraw As PictureBox
+    Friend WithEvents pbDeposit As PictureBox
+    Friend WithEvents pbManage As PictureBox
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

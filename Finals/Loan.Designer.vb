@@ -61,7 +61,7 @@ Partial Class Loan
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.BackColor = System.Drawing.Color.LightBlue
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.btnAdd)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -250,7 +250,7 @@ Partial Class Loan
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.ComboBox1)
         Me.GroupBox2.Controls.Add(Me.TextBox5)
