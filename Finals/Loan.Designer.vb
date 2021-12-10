@@ -43,8 +43,8 @@ Partial Class Loan
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtdeposit = New System.Windows.Forms.TextBox()
+        Me.txtwith = New System.Windows.Forms.TextBox()
         Me.txtaddress = New System.Windows.Forms.TextBox()
         Me.txtname = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -253,8 +253,8 @@ Partial Class Loan
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.ComboBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
+        Me.GroupBox2.Controls.Add(Me.txtdeposit)
+        Me.GroupBox2.Controls.Add(Me.txtwith)
         Me.GroupBox2.Controls.Add(Me.txtaddress)
         Me.GroupBox2.Controls.Add(Me.txtname)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -289,25 +289,25 @@ Partial Class Loan
         Me.ComboBox1.Size = New System.Drawing.Size(264, 28)
         Me.ComboBox1.TabIndex = 11
         '
-        'TextBox5
+        'txtdeposit
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(217, 236)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(264, 26)
-        Me.TextBox5.TabIndex = 10
-        Me.TextBox5.Text = "0"
-        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtdeposit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtdeposit.Location = New System.Drawing.Point(217, 236)
+        Me.txtdeposit.Name = "txtdeposit"
+        Me.txtdeposit.Size = New System.Drawing.Size(264, 26)
+        Me.txtdeposit.TabIndex = 10
+        Me.txtdeposit.Text = "0"
+        Me.txtdeposit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox4
+        'txtwith
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(217, 183)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(264, 26)
-        Me.TextBox4.TabIndex = 9
-        Me.TextBox4.Text = "0"
-        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtwith.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtwith.Location = New System.Drawing.Point(217, 183)
+        Me.txtwith.Name = "txtwith"
+        Me.txtwith.Size = New System.Drawing.Size(264, 26)
+        Me.txtwith.TabIndex = 9
+        Me.txtwith.Text = "0"
+        Me.txtwith.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtaddress
         '
@@ -418,8 +418,8 @@ Partial Class Loan
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtdeposit As TextBox
+    Friend WithEvents txtwith As TextBox
     Friend WithEvents txtaddress As TextBox
     Friend WithEvents txtname As TextBox
     Friend WithEvents Label6 As Label
