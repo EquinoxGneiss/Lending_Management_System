@@ -1,4 +1,8 @@
-﻿Public Class Login
+﻿Imports System.Data.OleDb
+Public Class Login
+    Dim con As New OleDbConnection
+    Dim dbProvider As String = "Provider=Microsoft.ACE.OLEDB.12.0;"
+    Dim dbSource As String = "Data Source=C:\Users\gamed\Documents\FinalsVb.net\Finals\Finals\accounts.accdb;"
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
@@ -8,17 +12,32 @@
     End Sub
 
     Private Sub btnlog_Click(sender As Object, e As EventArgs) Handles btnlog.Click
-        If txtUser.Text = "cruzjustin" Then
-            If txtPass.Text = "200427" Then
-                MsgBox("Login Successful!", vbInformation, "Welcome!")
-                Main.Show()
-                Me.Hide()
-            Else
-                MsgBox("Incorrect Password!", vbCritical, "Error")
-            End If
-        Else
-            MsgBox("Incorrect Username!", vbCritical, "Error")
+
+
+
+        If txtUser.Text = Nothing Or txtPass.Text = Nothing Then
+            MessageBox.Show("Please enter correct credentials", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+
+        Using login As New OleDbCommand("SELECT COUNT(*) FROM member WHERE [USERNAME] = @USERNAME OR [PASSWORD] = @PASSWORD", con)
+            login.Parameters.AddWithValue("@USERNAME", OleDbType.VarChar).Value = txtUser.Text.Trim
+            login.Parameters.AddWithValue("@PASSWORD", OleDbType.VarChar).Value = txtPass.Text.Trim
+
+            Dim logincount = Convert.ToInt32(login.ExecuteScalar())
+            If logincount > 0 Then
+                Me.Hide()
+                Main.Show()
+            Else
+                MessageBox.Show("Invalid credentials", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                txtUser.Clear()
+                txtPass.Clear()
+            End If
+        End Using
+        con.Close()
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -26,6 +45,7 @@
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        con.ConnectionString = dbProvider & dbSource
         Me.CenterToScreen()
     End Sub
 
@@ -75,5 +95,9 @@
 
     Private Sub txtPass_TextChanged(sender As Object, e As EventArgs) Handles txtPass.TextChanged
         txtPass.UseSystemPasswordChar = True
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Register.Show()
     End Sub
 End Class

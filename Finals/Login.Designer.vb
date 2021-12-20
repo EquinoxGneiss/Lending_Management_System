@@ -42,7 +42,6 @@ Partial Class Login
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(234, 26)
         Me.txtPass.TabIndex = 11
-        Me.txtPass.Text = "200427"
         '
         'txtUser
         '
@@ -51,7 +50,6 @@ Partial Class Login
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(234, 26)
         Me.txtUser.TabIndex = 10
-        Me.txtUser.Text = "cruzjustin"
         '
         'Label2
         '
@@ -127,7 +125,7 @@ Partial Class Login
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(377, 108)
+        Me.PictureBox1.Location = New System.Drawing.Point(387, 108)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(37, 20)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
