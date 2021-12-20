@@ -50,6 +50,19 @@
 
     Private Sub WithdrawToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WithdrawToolStripMenuItem.Click
         Loan.Show()
+
     End Sub
 
+    Private Sub SummaryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SummaryToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub UserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UserToolStripMenuItem.Click
+        User.Show()
+
+    End Sub
+
+    Private Sub pbManage_Click(sender As Object, e As EventArgs) Handles pbManage.Click
+        User.Show()
+    End Sub
 End Class

@@ -59,7 +59,7 @@ Partial Class Register
         Me.txtUsername.Location = New System.Drawing.Point(169, 46)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(234, 22)
-        Me.txtUsername.TabIndex = 1
+        Me.txtUsername.TabIndex = 0
         '
         'btnCancel
         '
@@ -67,7 +67,7 @@ Partial Class Register
         Me.btnCancel.Location = New System.Drawing.Point(169, 272)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 32)
-        Me.btnCancel.TabIndex = 2
+        Me.btnCancel.TabIndex = 6
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -113,7 +113,7 @@ Partial Class Register
         Me.txtContact.Location = New System.Drawing.Point(169, 183)
         Me.txtContact.Name = "txtContact"
         Me.txtContact.Size = New System.Drawing.Size(234, 22)
-        Me.txtContact.TabIndex = 8
+        Me.txtContact.TabIndex = 3
         '
         'txtEmail
         '
@@ -121,7 +121,7 @@ Partial Class Register
         Me.txtEmail.Location = New System.Drawing.Point(169, 225)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(234, 22)
-        Me.txtEmail.TabIndex = 9
+        Me.txtEmail.TabIndex = 4
         '
         'Label5
         '
@@ -141,7 +141,7 @@ Partial Class Register
         Me.btnRegister.Location = New System.Drawing.Point(328, 272)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(75, 32)
-        Me.btnRegister.TabIndex = 11
+        Me.btnRegister.TabIndex = 5
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = True
         '
@@ -162,7 +162,7 @@ Partial Class Register
         Me.txtPassword.Location = New System.Drawing.Point(169, 93)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(234, 26)
-        Me.txtPassword.TabIndex = 15
+        Me.txtPassword.TabIndex = 1
         '
         'PictureBox2
         '
@@ -181,7 +181,7 @@ Partial Class Register
         Me.txtConfirmPassword.Location = New System.Drawing.Point(169, 140)
         Me.txtConfirmPassword.Name = "txtConfirmPassword"
         Me.txtConfirmPassword.Size = New System.Drawing.Size(234, 26)
-        Me.txtConfirmPassword.TabIndex = 17
+        Me.txtConfirmPassword.TabIndex = 2
         '
         'Register
         '

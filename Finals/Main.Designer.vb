@@ -30,7 +30,9 @@ Partial Class Main
         Me.WithdrawToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransactiomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HistoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SummaryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pbLoan = New System.Windows.Forms.PictureBox()
         Me.pbWithdraw = New System.Windows.Forms.PictureBox()
@@ -81,21 +83,35 @@ Partial Class Main
         '
         'ViewToolStripMenuItem
         '
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DatabaseToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "View"
         '
+        'DatabaseToolStripMenuItem
+        '
+        Me.DatabaseToolStripMenuItem.Name = "DatabaseToolStripMenuItem"
+        Me.DatabaseToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.DatabaseToolStripMenuItem.Text = "Database"
+        '
         'TransactiomToolStripMenuItem
         '
+        Me.TransactiomToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HistoryToolStripMenuItem})
         Me.TransactiomToolStripMenuItem.Name = "TransactiomToolStripMenuItem"
         Me.TransactiomToolStripMenuItem.Size = New System.Drawing.Size(79, 20)
         Me.TransactiomToolStripMenuItem.Text = "Transaction"
         '
+        'HistoryToolStripMenuItem
+        '
+        Me.HistoryToolStripMenuItem.Name = "HistoryToolStripMenuItem"
+        Me.HistoryToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.HistoryToolStripMenuItem.Text = "History"
+        '
         'SummaryToolStripMenuItem
         '
         Me.SummaryToolStripMenuItem.Name = "SummaryToolStripMenuItem"
-        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
-        Me.SummaryToolStripMenuItem.Text = "Summary"
+        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.SummaryToolStripMenuItem.Text = "About"
         '
         'pbLoan
         '
@@ -174,7 +190,6 @@ Partial Class Main
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LoanToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TransactiomToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SummaryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WithdrawToolStripMenuItem As ToolStripMenuItem
@@ -184,4 +199,7 @@ Partial Class Main
     Friend WithEvents pbDeposit As PictureBox
     Friend WithEvents pbManage As PictureBox
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DatabaseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HistoryToolStripMenuItem As ToolStripMenuItem
 End Class
