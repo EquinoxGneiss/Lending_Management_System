@@ -29,6 +29,7 @@ Public Class Login
 
             Dim logincount = Convert.ToInt32(login.ExecuteScalar())
             If logincount > 0 Then
+                MessageBox.Show("Login Successfully!", "Logged In", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.Hide()
                 Main.Show()
             Else
