@@ -69,4 +69,8 @@ SaveErr:
             PictureBox1.Show()
         End If
     End Sub
+
+    Private Sub LASTNAMEToolStripLabel_Click(sender As Object, e As EventArgs) Handles LASTNAMEToolStripLabel.Click
+
+    End Sub
 End Class

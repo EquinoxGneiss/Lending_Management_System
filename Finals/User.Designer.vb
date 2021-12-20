@@ -23,6 +23,7 @@ Partial Class User
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(User))
         Me.btnnew = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtlastname = New System.Windows.Forms.TextBox()
@@ -49,6 +50,8 @@ Partial Class User
         Me.LASTNAMEToolStripLabel = New System.Windows.Forms.ToolStripLabel()
         Me.LASTNAMEToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
         Me.SearchToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LASTNAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FIRSTNAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -58,8 +61,6 @@ Partial Class User
         Me.InfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AccountsDataSet = New Finals.accountsDataSet()
         Me.InfoTableAdapter = New Finals.accountsDataSetTableAdapters.infoTableAdapter()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SearchToolStrip.SuspendLayout()
@@ -69,6 +70,7 @@ Partial Class User
         '
         'btnnew
         '
+        Me.btnnew.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnnew.Location = New System.Drawing.Point(164, 236)
         Me.btnnew.Name = "btnnew"
         Me.btnnew.Size = New System.Drawing.Size(75, 23)
@@ -79,6 +81,7 @@ Partial Class User
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(28, 58)
         Me.Label1.Name = "Label1"
@@ -98,6 +101,7 @@ Partial Class User
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(27, 99)
         Me.Label2.Name = "Label2"
@@ -108,6 +112,7 @@ Partial Class User
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(302, 143)
         Me.Label3.Name = "Label3"
@@ -118,6 +123,7 @@ Partial Class User
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(28, 143)
         Me.Label4.Name = "Label4"
@@ -128,6 +134,7 @@ Partial Class User
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(28, 194)
         Me.Label5.Name = "Label5"
@@ -185,6 +192,7 @@ Partial Class User
         '
         'btnprevious
         '
+        Me.btnprevious.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnprevious.Location = New System.Drawing.Point(164, 265)
         Me.btnprevious.Name = "btnprevious"
         Me.btnprevious.Size = New System.Drawing.Size(75, 23)
@@ -194,6 +202,7 @@ Partial Class User
         '
         'btnsave
         '
+        Me.btnsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsave.Location = New System.Drawing.Point(245, 236)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(75, 23)
@@ -203,6 +212,7 @@ Partial Class User
         '
         'btnnext
         '
+        Me.btnnext.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnnext.Location = New System.Drawing.Point(245, 265)
         Me.btnnext.Name = "btnnext"
         Me.btnnext.Size = New System.Drawing.Size(75, 23)
@@ -212,6 +222,7 @@ Partial Class User
         '
         'btnsearch
         '
+        Me.btnsearch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnsearch.Location = New System.Drawing.Point(326, 236)
         Me.btnsearch.Name = "btnsearch"
         Me.btnsearch.Size = New System.Drawing.Size(75, 23)
@@ -221,6 +232,7 @@ Partial Class User
         '
         'btnfirst
         '
+        Me.btnfirst.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnfirst.Location = New System.Drawing.Point(326, 265)
         Me.btnfirst.Name = "btnfirst"
         Me.btnfirst.Size = New System.Drawing.Size(75, 23)
@@ -230,6 +242,7 @@ Partial Class User
         '
         'btnremove
         '
+        Me.btnremove.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnremove.Location = New System.Drawing.Point(407, 236)
         Me.btnremove.Name = "btnremove"
         Me.btnremove.Size = New System.Drawing.Size(75, 23)
@@ -239,6 +252,7 @@ Partial Class User
         '
         'btnlast
         '
+        Me.btnlast.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnlast.Location = New System.Drawing.Point(407, 265)
         Me.btnlast.Name = "btnlast"
         Me.btnlast.Size = New System.Drawing.Size(75, 23)
@@ -248,6 +262,7 @@ Partial Class User
         '
         'btnclose
         '
+        Me.btnclose.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnclose.Location = New System.Drawing.Point(488, 236)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(75, 52)
@@ -257,6 +272,7 @@ Partial Class User
         '
         'btnbrowse
         '
+        Me.btnbrowse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnbrowse.Location = New System.Drawing.Point(721, 265)
         Me.btnbrowse.Name = "btnbrowse"
         Me.btnbrowse.Size = New System.Drawing.Size(75, 23)
@@ -280,7 +296,7 @@ Partial Class User
         Me.SearchToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LASTNAMEToolStripLabel, Me.LASTNAMEToolStripTextBox, Me.SearchToolStripButton})
         Me.SearchToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.SearchToolStrip.Name = "SearchToolStrip"
-        Me.SearchToolStrip.Size = New System.Drawing.Size(944, 25)
+        Me.SearchToolStrip.Size = New System.Drawing.Size(831, 25)
         Me.SearchToolStrip.TabIndex = 23
         Me.SearchToolStrip.Text = "SearchToolStrip"
         '
@@ -302,6 +318,20 @@ Partial Class User
         Me.SearchToolStripButton.Name = "SearchToolStripButton"
         Me.SearchToolStripButton.Size = New System.Drawing.Size(46, 22)
         Me.SearchToolStripButton.Text = "Search"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Label6
+        '
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label6.Location = New System.Drawing.Point(593, 50)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(203, 200)
+        Me.Label6.TabIndex = 24
+        Me.Label6.Text = "No Image Uploaded"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'IDDataGridViewTextBoxColumn
         '
@@ -353,25 +383,12 @@ Partial Class User
         '
         Me.InfoTableAdapter.ClearBeforeFill = True
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'Label6
-        '
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label6.Location = New System.Drawing.Point(593, 50)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(203, 200)
-        Me.Label6.TabIndex = 24
-        Me.Label6.Text = "No Image Uploaded"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'User
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(944, 561)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(831, 561)
         Me.Controls.Add(Me.SearchToolStrip)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnbrowse)
