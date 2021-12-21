@@ -90,6 +90,7 @@ Partial Class about
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "about"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About"
         Me.ResumeLayout(False)
         Me.PerformLayout()
