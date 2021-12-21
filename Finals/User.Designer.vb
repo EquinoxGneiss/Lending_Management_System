@@ -27,6 +27,8 @@ Partial Class User
         Me.btnnew = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtlastname = New System.Windows.Forms.TextBox()
+        Me.InfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.AccountsDataSet = New Finals.accountsDataSet()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -46,26 +48,24 @@ Partial Class User
         Me.btnclose = New System.Windows.Forms.Button()
         Me.btnbrowse = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.SearchToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.LASTNAMEToolStripLabel = New System.Windows.Forms.ToolStripLabel()
-        Me.LASTNAMEToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
-        Me.SearchToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LASTNAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FIRSTNAMEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GENDERDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AGEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PICTUREDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.InfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.AccountsDataSet = New Finals.accountsDataSet()
+        Me.SearchToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.LASTNAMEToolStripLabel = New System.Windows.Forms.ToolStripLabel()
+        Me.LASTNAMEToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
+        Me.SearchToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.InfoTableAdapter = New Finals.accountsDataSetTableAdapters.infoTableAdapter()
+        CType(Me.InfoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AccountsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SearchToolStrip.SuspendLayout()
-        CType(Me.InfoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AccountsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnnew
@@ -74,7 +74,7 @@ Partial Class User
         Me.btnnew.Location = New System.Drawing.Point(164, 236)
         Me.btnnew.Name = "btnnew"
         Me.btnnew.Size = New System.Drawing.Size(75, 23)
-        Me.btnnew.TabIndex = 0
+        Me.btnnew.TabIndex = 6
         Me.btnnew.Text = "NEW"
         Me.btnnew.UseVisualStyleBackColor = True
         '
@@ -96,7 +96,17 @@ Partial Class User
         Me.txtlastname.Location = New System.Drawing.Point(164, 50)
         Me.txtlastname.Name = "txtlastname"
         Me.txtlastname.Size = New System.Drawing.Size(399, 26)
-        Me.txtlastname.TabIndex = 2
+        Me.txtlastname.TabIndex = 0
+        '
+        'InfoBindingSource
+        '
+        Me.InfoBindingSource.DataMember = "info"
+        Me.InfoBindingSource.DataSource = Me.AccountsDataSet
+        '
+        'AccountsDataSet
+        '
+        Me.AccountsDataSet.DataSetName = "accountsDataSet"
+        Me.AccountsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label2
         '
@@ -149,7 +159,7 @@ Partial Class User
         Me.txtfirstname.Location = New System.Drawing.Point(164, 91)
         Me.txtfirstname.Name = "txtfirstname"
         Me.txtfirstname.Size = New System.Drawing.Size(399, 26)
-        Me.txtfirstname.TabIndex = 7
+        Me.txtfirstname.TabIndex = 1
         '
         'txtage
         '
@@ -158,7 +168,7 @@ Partial Class User
         Me.txtage.Location = New System.Drawing.Point(164, 135)
         Me.txtage.Name = "txtage"
         Me.txtage.Size = New System.Drawing.Size(93, 26)
-        Me.txtage.TabIndex = 8
+        Me.txtage.TabIndex = 2
         '
         'txtpicture
         '
@@ -167,7 +177,7 @@ Partial Class User
         Me.txtpicture.Location = New System.Drawing.Point(164, 186)
         Me.txtpicture.Name = "txtpicture"
         Me.txtpicture.Size = New System.Drawing.Size(399, 26)
-        Me.txtpicture.TabIndex = 10
+        Me.txtpicture.TabIndex = 4
         '
         'cmbgender
         '
@@ -178,7 +188,7 @@ Partial Class User
         Me.cmbgender.Location = New System.Drawing.Point(389, 135)
         Me.cmbgender.Name = "cmbgender"
         Me.cmbgender.Size = New System.Drawing.Size(174, 28)
-        Me.cmbgender.TabIndex = 11
+        Me.cmbgender.TabIndex = 3
         '
         'PictureBox1
         '
@@ -196,7 +206,7 @@ Partial Class User
         Me.btnprevious.Location = New System.Drawing.Point(164, 265)
         Me.btnprevious.Name = "btnprevious"
         Me.btnprevious.Size = New System.Drawing.Size(75, 23)
-        Me.btnprevious.TabIndex = 13
+        Me.btnprevious.TabIndex = 10
         Me.btnprevious.Text = "PREVIOUS"
         Me.btnprevious.UseVisualStyleBackColor = True
         '
@@ -206,7 +216,7 @@ Partial Class User
         Me.btnsave.Location = New System.Drawing.Point(245, 236)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(75, 23)
-        Me.btnsave.TabIndex = 14
+        Me.btnsave.TabIndex = 7
         Me.btnsave.Text = "SAVE"
         Me.btnsave.UseVisualStyleBackColor = True
         '
@@ -216,7 +226,7 @@ Partial Class User
         Me.btnnext.Location = New System.Drawing.Point(245, 265)
         Me.btnnext.Name = "btnnext"
         Me.btnnext.Size = New System.Drawing.Size(75, 23)
-        Me.btnnext.TabIndex = 15
+        Me.btnnext.TabIndex = 11
         Me.btnnext.Text = "NEXT"
         Me.btnnext.UseVisualStyleBackColor = True
         '
@@ -226,7 +236,7 @@ Partial Class User
         Me.btnsearch.Location = New System.Drawing.Point(326, 236)
         Me.btnsearch.Name = "btnsearch"
         Me.btnsearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnsearch.TabIndex = 16
+        Me.btnsearch.TabIndex = 8
         Me.btnsearch.Text = "SEARCH"
         Me.btnsearch.UseVisualStyleBackColor = True
         '
@@ -236,7 +246,7 @@ Partial Class User
         Me.btnfirst.Location = New System.Drawing.Point(326, 265)
         Me.btnfirst.Name = "btnfirst"
         Me.btnfirst.Size = New System.Drawing.Size(75, 23)
-        Me.btnfirst.TabIndex = 17
+        Me.btnfirst.TabIndex = 12
         Me.btnfirst.Text = "FIRST"
         Me.btnfirst.UseVisualStyleBackColor = True
         '
@@ -246,7 +256,7 @@ Partial Class User
         Me.btnremove.Location = New System.Drawing.Point(407, 236)
         Me.btnremove.Name = "btnremove"
         Me.btnremove.Size = New System.Drawing.Size(75, 23)
-        Me.btnremove.TabIndex = 18
+        Me.btnremove.TabIndex = 9
         Me.btnremove.Text = "REMOVE"
         Me.btnremove.UseVisualStyleBackColor = True
         '
@@ -256,7 +266,7 @@ Partial Class User
         Me.btnlast.Location = New System.Drawing.Point(407, 265)
         Me.btnlast.Name = "btnlast"
         Me.btnlast.Size = New System.Drawing.Size(75, 23)
-        Me.btnlast.TabIndex = 19
+        Me.btnlast.TabIndex = 13
         Me.btnlast.Text = "LAST"
         Me.btnlast.UseVisualStyleBackColor = True
         '
@@ -266,7 +276,7 @@ Partial Class User
         Me.btnclose.Location = New System.Drawing.Point(488, 236)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(75, 52)
-        Me.btnclose.TabIndex = 20
+        Me.btnclose.TabIndex = 14
         Me.btnclose.Text = "CLOSE"
         Me.btnclose.UseVisualStyleBackColor = True
         '
@@ -276,7 +286,7 @@ Partial Class User
         Me.btnbrowse.Location = New System.Drawing.Point(721, 265)
         Me.btnbrowse.Name = "btnbrowse"
         Me.btnbrowse.Size = New System.Drawing.Size(75, 23)
-        Me.btnbrowse.TabIndex = 21
+        Me.btnbrowse.TabIndex = 5
         Me.btnbrowse.Text = "BROWSE"
         Me.btnbrowse.UseVisualStyleBackColor = True
         '
@@ -290,48 +300,6 @@ Partial Class User
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(632, 209)
         Me.DataGridView1.TabIndex = 22
-        '
-        'SearchToolStrip
-        '
-        Me.SearchToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LASTNAMEToolStripLabel, Me.LASTNAMEToolStripTextBox, Me.SearchToolStripButton})
-        Me.SearchToolStrip.Location = New System.Drawing.Point(0, 0)
-        Me.SearchToolStrip.Name = "SearchToolStrip"
-        Me.SearchToolStrip.Size = New System.Drawing.Size(831, 25)
-        Me.SearchToolStrip.TabIndex = 23
-        Me.SearchToolStrip.Text = "SearchToolStrip"
-        '
-        'LASTNAMEToolStripLabel
-        '
-        Me.LASTNAMEToolStripLabel.Name = "LASTNAMEToolStripLabel"
-        Me.LASTNAMEToolStripLabel.Size = New System.Drawing.Size(70, 22)
-        Me.LASTNAMEToolStripLabel.Text = "LASTNAME:"
-        '
-        'LASTNAMEToolStripTextBox
-        '
-        Me.LASTNAMEToolStripTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.LASTNAMEToolStripTextBox.Name = "LASTNAMEToolStripTextBox"
-        Me.LASTNAMEToolStripTextBox.Size = New System.Drawing.Size(100, 25)
-        '
-        'SearchToolStripButton
-        '
-        Me.SearchToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.SearchToolStripButton.Name = "SearchToolStripButton"
-        Me.SearchToolStripButton.Size = New System.Drawing.Size(46, 22)
-        Me.SearchToolStripButton.Text = "Search"
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'Label6
-        '
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label6.Location = New System.Drawing.Point(593, 50)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(203, 200)
-        Me.Label6.TabIndex = 24
-        Me.Label6.Text = "No Image Uploaded"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'IDDataGridViewTextBoxColumn
         '
@@ -369,15 +337,46 @@ Partial Class User
         Me.PICTUREDataGridViewTextBoxColumn.HeaderText = "PICTURE"
         Me.PICTUREDataGridViewTextBoxColumn.Name = "PICTUREDataGridViewTextBoxColumn"
         '
-        'InfoBindingSource
+        'SearchToolStrip
         '
-        Me.InfoBindingSource.DataMember = "info"
-        Me.InfoBindingSource.DataSource = Me.AccountsDataSet
+        Me.SearchToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LASTNAMEToolStripLabel, Me.LASTNAMEToolStripTextBox, Me.SearchToolStripButton})
+        Me.SearchToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.SearchToolStrip.Name = "SearchToolStrip"
+        Me.SearchToolStrip.Size = New System.Drawing.Size(831, 25)
+        Me.SearchToolStrip.TabIndex = 23
+        Me.SearchToolStrip.Text = "SearchToolStrip"
         '
-        'AccountsDataSet
+        'LASTNAMEToolStripLabel
         '
-        Me.AccountsDataSet.DataSetName = "accountsDataSet"
-        Me.AccountsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.LASTNAMEToolStripLabel.Name = "LASTNAMEToolStripLabel"
+        Me.LASTNAMEToolStripLabel.Size = New System.Drawing.Size(70, 22)
+        Me.LASTNAMEToolStripLabel.Text = "LASTNAME:"
+        '
+        'LASTNAMEToolStripTextBox
+        '
+        Me.LASTNAMEToolStripTextBox.Name = "LASTNAMEToolStripTextBox"
+        Me.LASTNAMEToolStripTextBox.Size = New System.Drawing.Size(100, 25)
+        '
+        'SearchToolStripButton
+        '
+        Me.SearchToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.SearchToolStripButton.Name = "SearchToolStripButton"
+        Me.SearchToolStripButton.Size = New System.Drawing.Size(46, 22)
+        Me.SearchToolStripButton.Text = "Search"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Label6
+        '
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label6.Location = New System.Drawing.Point(593, 50)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(203, 200)
+        Me.Label6.TabIndex = 24
+        Me.Label6.Text = "No Image Uploaded"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'InfoTableAdapter
         '
@@ -414,13 +413,14 @@ Partial Class User
         Me.Controls.Add(Me.btnnew)
         Me.Controls.Add(Me.Label6)
         Me.Name = "User"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User"
+        CType(Me.InfoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AccountsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SearchToolStrip.ResumeLayout(False)
         Me.SearchToolStrip.PerformLayout()
-        CType(Me.InfoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AccountsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -20,11 +20,11 @@ Public Class Register
             cmd.Parameters.AddWithValue("@PASSWORD", OleDbType.VarChar).Value = txtPassword.Text.Trim
 
             Dim count = Convert.ToInt32(cmd.ExecuteScalar())
-            If count > 0 Then
-                MessageBox.Show("Username and Password is already taken", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-                If txtConfirmPassword.Text <> txtPassword.Text Then
-                    MessageBox.Show("Password didn't match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            If txtConfirmPassword.Text <> txtPassword.Text Then
+                MessageBox.Show("Password didn't match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                If count > 0 Then
+                    MessageBox.Show("Username and Password is already taken", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
                 End If
             End If
         End Using

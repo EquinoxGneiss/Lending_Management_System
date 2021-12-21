@@ -41,7 +41,7 @@ Partial Class Login
         Me.txtPass.Location = New System.Drawing.Point(190, 105)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(234, 26)
-        Me.txtPass.TabIndex = 11
+        Me.txtPass.TabIndex = 1
         '
         'txtUser
         '
@@ -49,7 +49,7 @@ Partial Class Login
         Me.txtUser.Location = New System.Drawing.Point(190, 60)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(234, 26)
-        Me.txtUser.TabIndex = 10
+        Me.txtUser.TabIndex = 0
         '
         'Label2
         '
@@ -82,7 +82,7 @@ Partial Class Login
         Me.btnCancel.Location = New System.Drawing.Point(190, 141)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(114, 42)
-        Me.btnCancel.TabIndex = 7
+        Me.btnCancel.TabIndex = 4
         Me.btnCancel.Text = "Exit"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -93,7 +93,7 @@ Partial Class Login
         Me.btnlog.Location = New System.Drawing.Point(310, 141)
         Me.btnlog.Name = "btnlog"
         Me.btnlog.Size = New System.Drawing.Size(114, 42)
-        Me.btnlog.TabIndex = 6
+        Me.btnlog.TabIndex = 2
         Me.btnlog.Text = "Login"
         Me.btnlog.UseVisualStyleBackColor = True
         '
@@ -106,7 +106,7 @@ Partial Class Login
         Me.LinkLabel1.Location = New System.Drawing.Point(329, 200)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(63, 20)
-        Me.LinkLabel1.TabIndex = 12
+        Me.LinkLabel1.TabIndex = 3
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Sign up"
         '
@@ -149,6 +149,7 @@ Partial Class Login
         Me.Controls.Add(Me.btnlog)
         Me.Controls.Add(Me.txtPass)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

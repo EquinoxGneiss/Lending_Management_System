@@ -22,6 +22,7 @@ Partial Class Loan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Loan))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -54,6 +55,9 @@ Partial Class Loan
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.DateandMonth = New System.Windows.Forms.Label()
+        Me.Time = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.nudMonths, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -104,7 +108,7 @@ Partial Class Loan
         Me.btnAdd.Location = New System.Drawing.Point(888, 426)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(55, 43)
-        Me.btnAdd.TabIndex = 27
+        Me.btnAdd.TabIndex = 5
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
@@ -115,7 +119,7 @@ Partial Class Loan
         Me.Button1.Location = New System.Drawing.Point(1014, 426)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(55, 43)
-        Me.Button1.TabIndex = 26
+        Me.Button1.TabIndex = 8
         Me.Button1.Text = "Exit"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -126,7 +130,7 @@ Partial Class Loan
         Me.btnCancel.Location = New System.Drawing.Point(949, 426)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(59, 43)
-        Me.btnCancel.TabIndex = 25
+        Me.btnCancel.TabIndex = 7
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -147,7 +151,7 @@ Partial Class Loan
         Me.txtPayment.Location = New System.Drawing.Point(805, 212)
         Me.txtPayment.Name = "txtPayment"
         Me.txtPayment.Size = New System.Drawing.Size(230, 26)
-        Me.txtPayment.TabIndex = 23
+        Me.txtPayment.TabIndex = 3
         '
         'Button3
         '
@@ -167,7 +171,7 @@ Partial Class Loan
         Me.nudMonths.Location = New System.Drawing.Point(805, 164)
         Me.nudMonths.Name = "nudMonths"
         Me.nudMonths.Size = New System.Drawing.Size(230, 26)
-        Me.nudMonths.TabIndex = 20
+        Me.nudMonths.TabIndex = 2
         Me.nudMonths.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtInterest
@@ -176,7 +180,7 @@ Partial Class Loan
         Me.txtInterest.Location = New System.Drawing.Point(805, 111)
         Me.txtInterest.Name = "txtInterest"
         Me.txtInterest.Size = New System.Drawing.Size(264, 26)
-        Me.txtInterest.TabIndex = 19
+        Me.txtInterest.TabIndex = 1
         '
         'txtAnalysis
         '
@@ -203,7 +207,7 @@ Partial Class Loan
         Me.txtBalance.Location = New System.Drawing.Point(805, 60)
         Me.txtBalance.Name = "txtBalance"
         Me.txtBalance.Size = New System.Drawing.Size(264, 26)
-        Me.txtBalance.TabIndex = 13
+        Me.txtBalance.TabIndex = 0
         '
         'btnCompute
         '
@@ -212,7 +216,7 @@ Partial Class Loan
         Me.btnCompute.Location = New System.Drawing.Point(201, 426)
         Me.btnCompute.Name = "btnCompute"
         Me.btnCompute.Size = New System.Drawing.Size(161, 43)
-        Me.btnCompute.TabIndex = 2
+        Me.btnCompute.TabIndex = 4
         Me.btnCompute.Text = "Compute Monthly"
         Me.btnCompute.UseVisualStyleBackColor = True
         '
@@ -234,7 +238,7 @@ Partial Class Loan
         Me.btnNewLoan.Location = New System.Drawing.Point(34, 426)
         Me.btnNewLoan.Name = "btnNewLoan"
         Me.btnNewLoan.Size = New System.Drawing.Size(161, 43)
-        Me.btnNewLoan.TabIndex = 1
+        Me.btnNewLoan.TabIndex = 6
         Me.btnNewLoan.Text = "New Loan Analysis"
         Me.btnNewLoan.UseVisualStyleBackColor = True
         '
@@ -287,7 +291,7 @@ Partial Class Loan
         Me.ComboBox1.Location = New System.Drawing.Point(217, 132)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(264, 28)
-        Me.ComboBox1.TabIndex = 11
+        Me.ComboBox1.TabIndex = 2
         '
         'txtdeposit
         '
@@ -295,7 +299,7 @@ Partial Class Loan
         Me.txtdeposit.Location = New System.Drawing.Point(217, 236)
         Me.txtdeposit.Name = "txtdeposit"
         Me.txtdeposit.Size = New System.Drawing.Size(264, 26)
-        Me.txtdeposit.TabIndex = 10
+        Me.txtdeposit.TabIndex = 4
         Me.txtdeposit.Text = "0"
         Me.txtdeposit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -305,7 +309,7 @@ Partial Class Loan
         Me.txtwith.Location = New System.Drawing.Point(217, 183)
         Me.txtwith.Name = "txtwith"
         Me.txtwith.Size = New System.Drawing.Size(264, 26)
-        Me.txtwith.TabIndex = 9
+        Me.txtwith.TabIndex = 3
         Me.txtwith.Text = "0"
         Me.txtwith.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -315,7 +319,7 @@ Partial Class Loan
         Me.txtaddress.Location = New System.Drawing.Point(217, 86)
         Me.txtaddress.Name = "txtaddress"
         Me.txtaddress.Size = New System.Drawing.Size(264, 26)
-        Me.txtaddress.TabIndex = 7
+        Me.txtaddress.TabIndex = 1
         '
         'txtname
         '
@@ -323,7 +327,7 @@ Partial Class Loan
         Me.txtname.Location = New System.Drawing.Point(217, 35)
         Me.txtname.Name = "txtname"
         Me.txtname.Size = New System.Drawing.Size(264, 26)
-        Me.txtname.TabIndex = 6
+        Me.txtname.TabIndex = 0
         '
         'Label6
         '
@@ -395,6 +399,31 @@ Partial Class Loan
         Me.Label10.TabIndex = 13
         Me.Label10.Text = "Ammount of Loan"
         '
+        'DateandMonth
+        '
+        Me.DateandMonth.AutoSize = True
+        Me.DateandMonth.BackColor = System.Drawing.Color.Transparent
+        Me.DateandMonth.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateandMonth.Location = New System.Drawing.Point(178, 9)
+        Me.DateandMonth.Name = "DateandMonth"
+        Me.DateandMonth.Size = New System.Drawing.Size(61, 25)
+        Me.DateandMonth.TabIndex = 16
+        Me.DateandMonth.Text = "Date"
+        '
+        'Time
+        '
+        Me.Time.AutoSize = True
+        Me.Time.BackColor = System.Drawing.Color.Transparent
+        Me.Time.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Time.Location = New System.Drawing.Point(12, 9)
+        Me.Time.Name = "Time"
+        Me.Time.Size = New System.Drawing.Size(63, 25)
+        Me.Time.TabIndex = 15
+        Me.Time.Text = "Time"
+        '
+        'Timer1
+        '
+        '
         'Loan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -403,6 +432,8 @@ Partial Class Loan
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 598)
+        Me.Controls.Add(Me.DateandMonth)
+        Me.Controls.Add(Me.Time)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Loan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -413,6 +444,7 @@ Partial Class Loan
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -447,4 +479,7 @@ Partial Class Loan
     Friend WithEvents btnAdd As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btnCancel As Button
+    Friend WithEvents DateandMonth As Label
+    Friend WithEvents Time As Label
+    Friend WithEvents Timer1 As Timer
 End Class

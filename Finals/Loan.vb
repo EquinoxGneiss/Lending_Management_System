@@ -1,7 +1,20 @@
-﻿Public Class Loan
+﻿Imports System.Data.OleDb
+Public Class Loan
     Dim index As Integer
     Dim computePayment As Integer
+    Dim con As New OleDbConnection
+    Dim dbProvider As String = "Provider=Microsoft.ACE.OLEDB.12.0;"
+    Dim dbSource As String = "Data Source=C:\Users\gamed\Documents\FinalsVb.net\Finals\Finals\accounts.accdb;"
 
+    Dim Balance As Double
+    Dim Interest As Double
+    Dim Months As Integer
+    Dim Payment As Double
+    Dim MonthlyInterest As Double
+    Dim Multiplier As Double
+    Dim LoanBalance As Double
+    Dim FinalPayment As Double
+    Dim PaymentNumber As Integer
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
     End Sub
@@ -22,15 +35,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnCompute.Click
-        Dim Balance As Double
-        Dim Interest As Double
-        Dim Months As Integer
-        Dim Payment As Double
-        Dim MonthlyInterest As Double
-        Dim Multiplier As Double
-        Dim LoanBalance As Double
-        Dim FinalPayment As Double
-        Dim PaymentNumber As Integer
+
 
         If txtBalance.Text <> "" Then
             Balance = Val(txtBalance.Text)
@@ -128,7 +133,28 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        MsgBox("Loan Transferred into your account", MsgBoxStyle.Information)
+
+
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+        Using create As New OleDbCommand("INSERT INTO transactions ([AMOUNT],[LOAN_TYPE],[INTEREST_RATE],[NUMBER_OF_PAYMENT],[MONTHLY_PAYMENT],[FINAL_PAYMENT],[TIME],[DATE_AND_MONTH])VALUES(@AMOUNT,@LOAN_TYPE,@INTEREST_RATE,@NUMBER_OF_PAYMENT,@MONTHLY_PAYMENT,@FINAL_PAYMENT,@TIME,@DATE_AND_MONTH)", con)
+            create.Parameters.AddWithValue("@AMOUNT", OleDbType.VarChar).Value = txtBalance.Text.Trim
+            create.Parameters.AddWithValue("@LOAN_TYPE", OleDbType.VarChar).Value = ComboBox1.Text.Trim
+            create.Parameters.AddWithValue("@INTEREST_RATE", OleDbType.VarChar).Value = txtInterest.Text.Trim
+            create.Parameters.AddWithValue("@NUMBER_OF_PAYMENT", OleDbType.VarChar).Value = nudMonths.Text.Trim
+            create.Parameters.AddWithValue("@MONTHLY_PAYMENT", OleDbType.VarChar).Value = txtPayment.Text.Trim
+            create.Parameters.AddWithValue("@FINAL_PAYMENT", OleDbType.VarChar).Value = FinalPayment
+            create.Parameters.AddWithValue("@TIME", OleDbType.VarChar).Value = Time.Text
+            create.Parameters.AddWithValue("@DATE_AND_MONTH", OleDbType.VarChar).Value = DateandMonth.Text
+            If create.ExecuteNonQuery Then
+                MsgBox("Loan Transferred into your account", MsgBoxStyle.Information)
+                txtBalance.Clear()
+                txtInterest.Clear()
+                txtPayment.Clear()
+            End If
+        End Using
+        con.Close()
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -137,6 +163,20 @@
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Loan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        con.ConnectionString = dbProvider & dbSource
+        DateandMonth.Text = FormatDateTime(Today)
+        Timer1.Start()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Time.Text = TimeString
+    End Sub
+
+    Private Sub DateandMonth_Click(sender As Object, e As EventArgs) Handles DateandMonth.Click
 
     End Sub
 End Class
