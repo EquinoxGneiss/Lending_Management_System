@@ -437,7 +437,7 @@ Partial Class Loan
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Loan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Loan"
+        Me.Text = "Lending Management System"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.nudMonths, System.ComponentModel.ISupportInitialize).EndInit()
