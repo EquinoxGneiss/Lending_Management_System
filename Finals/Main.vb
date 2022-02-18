@@ -99,4 +99,11 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Time.Text = TimeString
     End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        MessageBox.Show("Do you want to logout?", "Logout?", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        If DialogResult.OK Then
+            Me.Close()
+        End If
+    End Sub
 End Class
