@@ -85,20 +85,23 @@ Partial Class Loan
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Himalaya", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(128, 58)
+        Me.GroupBox1.Location = New System.Drawing.Point(171, 71)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1096, 489)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1461, 602)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Team Viewer's Lending Management System"
+        Me.GroupBox1.Text = "Lend, Deposit and Withdraw"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(587, 438)
+        Me.Label11.Location = New System.Drawing.Point(783, 539)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(183, 31)
+        Me.Label11.Size = New System.Drawing.Size(230, 39)
         Me.Label11.TabIndex = 28
         Me.Label11.Text = "Loan Analysis"
         '
@@ -106,9 +109,10 @@ Partial Class Loan
         '
         Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(888, 426)
+        Me.btnAdd.Location = New System.Drawing.Point(1184, 524)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(55, 43)
+        Me.btnAdd.Size = New System.Drawing.Size(73, 53)
         Me.btnAdd.TabIndex = 5
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
@@ -117,9 +121,10 @@ Partial Class Loan
         '
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1014, 426)
+        Me.Button1.Location = New System.Drawing.Point(1352, 524)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(55, 43)
+        Me.Button1.Size = New System.Drawing.Size(73, 53)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Exit"
         Me.Button1.UseVisualStyleBackColor = True
@@ -128,9 +133,10 @@ Partial Class Loan
         '
         Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(949, 426)
+        Me.btnCancel.Location = New System.Drawing.Point(1265, 524)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(59, 43)
+        Me.btnCancel.Size = New System.Drawing.Size(79, 53)
         Me.btnCancel.TabIndex = 7
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
@@ -139,9 +145,10 @@ Partial Class Loan
         '
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(1041, 212)
+        Me.Button4.Location = New System.Drawing.Point(1388, 261)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(28, 26)
+        Me.Button4.Size = New System.Drawing.Size(37, 32)
         Me.Button4.TabIndex = 24
         Me.Button4.Text = "X"
         Me.Button4.UseVisualStyleBackColor = True
@@ -149,18 +156,20 @@ Partial Class Loan
         'txtPayment
         '
         Me.txtPayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPayment.Location = New System.Drawing.Point(805, 212)
+        Me.txtPayment.Location = New System.Drawing.Point(1073, 261)
+        Me.txtPayment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPayment.Name = "txtPayment"
-        Me.txtPayment.Size = New System.Drawing.Size(230, 26)
+        Me.txtPayment.Size = New System.Drawing.Size(305, 30)
         Me.txtPayment.TabIndex = 3
         '
         'Button3
         '
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(1041, 164)
+        Me.Button3.Location = New System.Drawing.Point(1388, 202)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(28, 26)
+        Me.Button3.Size = New System.Drawing.Size(37, 32)
         Me.Button3.TabIndex = 21
         Me.Button3.Text = "X"
         Me.Button3.UseVisualStyleBackColor = True
@@ -169,54 +178,60 @@ Partial Class Loan
         '
         Me.nudMonths.Cursor = System.Windows.Forms.Cursors.Hand
         Me.nudMonths.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nudMonths.Location = New System.Drawing.Point(805, 164)
+        Me.nudMonths.Location = New System.Drawing.Point(1073, 202)
+        Me.nudMonths.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudMonths.Name = "nudMonths"
-        Me.nudMonths.Size = New System.Drawing.Size(230, 26)
+        Me.nudMonths.Size = New System.Drawing.Size(307, 30)
         Me.nudMonths.TabIndex = 2
         Me.nudMonths.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtInterest
         '
         Me.txtInterest.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtInterest.Location = New System.Drawing.Point(805, 111)
+        Me.txtInterest.Location = New System.Drawing.Point(1073, 137)
+        Me.txtInterest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtInterest.Name = "txtInterest"
-        Me.txtInterest.Size = New System.Drawing.Size(264, 26)
+        Me.txtInterest.Size = New System.Drawing.Size(351, 30)
         Me.txtInterest.TabIndex = 1
         '
         'txtAnalysis
         '
         Me.txtAnalysis.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAnalysis.Location = New System.Drawing.Point(588, 260)
+        Me.txtAnalysis.Location = New System.Drawing.Point(784, 320)
+        Me.txtAnalysis.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAnalysis.Multiline = True
         Me.txtAnalysis.Name = "txtAnalysis"
-        Me.txtAnalysis.Size = New System.Drawing.Size(481, 151)
+        Me.txtAnalysis.Size = New System.Drawing.Size(640, 185)
         Me.txtAnalysis.TabIndex = 14
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(584, 212)
+        Me.Label7.Location = New System.Drawing.Point(779, 261)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(154, 24)
+        Me.Label7.Size = New System.Drawing.Size(195, 29)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Monthly Payment"
         '
         'txtBalance
         '
         Me.txtBalance.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBalance.Location = New System.Drawing.Point(805, 60)
+        Me.txtBalance.Location = New System.Drawing.Point(1073, 74)
+        Me.txtBalance.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBalance.Name = "txtBalance"
-        Me.txtBalance.Size = New System.Drawing.Size(264, 26)
+        Me.txtBalance.Size = New System.Drawing.Size(351, 30)
         Me.txtBalance.TabIndex = 0
         '
         'btnCompute
         '
         Me.btnCompute.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCompute.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCompute.Location = New System.Drawing.Point(201, 426)
+        Me.btnCompute.Location = New System.Drawing.Point(268, 524)
+        Me.btnCompute.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCompute.Name = "btnCompute"
-        Me.btnCompute.Size = New System.Drawing.Size(161, 43)
+        Me.btnCompute.Size = New System.Drawing.Size(215, 53)
         Me.btnCompute.TabIndex = 4
         Me.btnCompute.Text = "Compute Monthly"
         Me.btnCompute.UseVisualStyleBackColor = True
@@ -225,9 +240,10 @@ Partial Class Loan
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(584, 163)
+        Me.Label8.Location = New System.Drawing.Point(779, 201)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(186, 24)
+        Me.Label8.Size = New System.Drawing.Size(237, 29)
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Number of Payments"
         '
@@ -236,9 +252,10 @@ Partial Class Loan
         Me.btnNewLoan.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNewLoan.Enabled = False
         Me.btnNewLoan.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNewLoan.Location = New System.Drawing.Point(34, 426)
+        Me.btnNewLoan.Location = New System.Drawing.Point(45, 524)
+        Me.btnNewLoan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNewLoan.Name = "btnNewLoan"
-        Me.btnNewLoan.Size = New System.Drawing.Size(161, 43)
+        Me.btnNewLoan.Size = New System.Drawing.Size(215, 53)
         Me.btnNewLoan.TabIndex = 6
         Me.btnNewLoan.Text = "New Loan Analysis"
         Me.btnNewLoan.UseVisualStyleBackColor = True
@@ -247,9 +264,10 @@ Partial Class Loan
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(584, 111)
+        Me.Label9.Location = New System.Drawing.Point(779, 137)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(113, 24)
+        Me.Label9.Size = New System.Drawing.Size(148, 29)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "Interest Rate"
         '
@@ -268,9 +286,11 @@ Partial Class Loan
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Location = New System.Drawing.Point(34, 60)
+        Me.GroupBox2.Location = New System.Drawing.Point(45, 74)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(513, 351)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(684, 432)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         '
@@ -278,9 +298,10 @@ Partial Class Loan
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox1.Location = New System.Drawing.Point(217, 306)
+        Me.CheckBox1.Location = New System.Drawing.Point(289, 377)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
+        Me.CheckBox1.Size = New System.Drawing.Size(18, 17)
         Me.CheckBox1.TabIndex = 12
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -289,17 +310,19 @@ Partial Class Loan
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Current Account", "Saving Account", "ISA", "Joint Account"})
-        Me.ComboBox1.Location = New System.Drawing.Point(217, 132)
+        Me.ComboBox1.Location = New System.Drawing.Point(289, 162)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(264, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(351, 33)
         Me.ComboBox1.TabIndex = 2
         '
         'txtdeposit
         '
         Me.txtdeposit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtdeposit.Location = New System.Drawing.Point(217, 236)
+        Me.txtdeposit.Location = New System.Drawing.Point(289, 290)
+        Me.txtdeposit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtdeposit.Name = "txtdeposit"
-        Me.txtdeposit.Size = New System.Drawing.Size(264, 26)
+        Me.txtdeposit.Size = New System.Drawing.Size(351, 30)
         Me.txtdeposit.TabIndex = 4
         Me.txtdeposit.Text = "0"
         Me.txtdeposit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -307,9 +330,10 @@ Partial Class Loan
         'txtwith
         '
         Me.txtwith.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtwith.Location = New System.Drawing.Point(217, 183)
+        Me.txtwith.Location = New System.Drawing.Point(289, 225)
+        Me.txtwith.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtwith.Name = "txtwith"
-        Me.txtwith.Size = New System.Drawing.Size(264, 26)
+        Me.txtwith.Size = New System.Drawing.Size(351, 30)
         Me.txtwith.TabIndex = 3
         Me.txtwith.Text = "0"
         Me.txtwith.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -317,26 +341,29 @@ Partial Class Loan
         'txtaddress
         '
         Me.txtaddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtaddress.Location = New System.Drawing.Point(217, 86)
+        Me.txtaddress.Location = New System.Drawing.Point(289, 106)
+        Me.txtaddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtaddress.Name = "txtaddress"
-        Me.txtaddress.Size = New System.Drawing.Size(264, 26)
+        Me.txtaddress.Size = New System.Drawing.Size(351, 30)
         Me.txtaddress.TabIndex = 1
         '
         'txtname
         '
         Me.txtname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtname.Location = New System.Drawing.Point(217, 35)
+        Me.txtname.Location = New System.Drawing.Point(289, 43)
+        Me.txtname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtname.Name = "txtname"
-        Me.txtname.Size = New System.Drawing.Size(264, 26)
+        Me.txtname.Size = New System.Drawing.Size(351, 30)
         Me.txtname.TabIndex = 0
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(26, 298)
+        Me.Label6.Location = New System.Drawing.Point(35, 367)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(179, 24)
+        Me.Label6.Size = New System.Drawing.Size(230, 29)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Overdraft Required?"
         '
@@ -344,9 +371,10 @@ Partial Class Loan
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(26, 234)
+        Me.Label5.Location = New System.Drawing.Point(35, 288)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 24)
+        Me.Label5.Size = New System.Drawing.Size(96, 29)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Deposit"
         '
@@ -354,9 +382,10 @@ Partial Class Loan
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(26, 190)
+        Me.Label4.Location = New System.Drawing.Point(35, 234)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 24)
+        Me.Label4.Size = New System.Drawing.Size(132, 29)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Withdrawal"
         '
@@ -364,9 +393,10 @@ Partial Class Loan
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(26, 132)
+        Me.Label3.Location = New System.Drawing.Point(35, 162)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 24)
+        Me.Label3.Size = New System.Drawing.Size(159, 29)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Account Type"
         '
@@ -374,9 +404,10 @@ Partial Class Loan
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(26, 80)
+        Me.Label2.Location = New System.Drawing.Point(35, 98)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 24)
+        Me.Label2.Size = New System.Drawing.Size(102, 29)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Address"
         '
@@ -384,9 +415,10 @@ Partial Class Loan
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(26, 29)
+        Me.Label1.Location = New System.Drawing.Point(35, 36)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 24)
+        Me.Label1.Size = New System.Drawing.Size(124, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Full Name"
         '
@@ -394,9 +426,10 @@ Partial Class Loan
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(584, 60)
+        Me.Label10.Location = New System.Drawing.Point(779, 74)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(159, 24)
+        Me.Label10.Size = New System.Drawing.Size(199, 29)
         Me.Label10.TabIndex = 13
         Me.Label10.Text = "Ammount of Loan"
         '
@@ -405,9 +438,10 @@ Partial Class Loan
         Me.DateandMonth.AutoSize = True
         Me.DateandMonth.BackColor = System.Drawing.Color.Transparent
         Me.DateandMonth.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateandMonth.Location = New System.Drawing.Point(178, 9)
+        Me.DateandMonth.Location = New System.Drawing.Point(237, 11)
+        Me.DateandMonth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.DateandMonth.Name = "DateandMonth"
-        Me.DateandMonth.Size = New System.Drawing.Size(61, 25)
+        Me.DateandMonth.Size = New System.Drawing.Size(76, 31)
         Me.DateandMonth.TabIndex = 16
         Me.DateandMonth.Text = "Date"
         '
@@ -416,9 +450,10 @@ Partial Class Loan
         Me.Time.AutoSize = True
         Me.Time.BackColor = System.Drawing.Color.Transparent
         Me.Time.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Time.Location = New System.Drawing.Point(12, 9)
+        Me.Time.Location = New System.Drawing.Point(16, 11)
+        Me.Time.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Time.Name = "Time"
-        Me.Time.Size = New System.Drawing.Size(63, 25)
+        Me.Time.Size = New System.Drawing.Size(78, 31)
         Me.Time.TabIndex = 15
         Me.Time.Text = "Time"
         '
@@ -427,15 +462,16 @@ Partial Class Loan
         '
         'Loan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1350, 598)
+        Me.ClientSize = New System.Drawing.Size(1800, 736)
         Me.Controls.Add(Me.DateandMonth)
         Me.Controls.Add(Me.Time)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Loan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lending Management System"
