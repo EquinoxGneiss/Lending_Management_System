@@ -29,6 +29,7 @@ Partial Class Main
         Me.LoanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WithdrawToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransactiomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HistoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SummaryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,18 +45,11 @@ Partial Class Main
         Me.Time = New System.Windows.Forms.Label()
         Me.DateandMonth = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.pbLoan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbWithdraw, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDeposit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbManage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -94,6 +88,12 @@ Partial Class Main
         Me.UserToolStripMenuItem.Size = New System.Drawing.Size(241, 26)
         Me.UserToolStripMenuItem.Text = "User"
         '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(241, 26)
+        Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
         'TransactiomToolStripMenuItem
         '
         Me.TransactiomToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HistoryToolStripMenuItem})
@@ -104,7 +104,7 @@ Partial Class Main
         'HistoryToolStripMenuItem
         '
         Me.HistoryToolStripMenuItem.Name = "HistoryToolStripMenuItem"
-        Me.HistoryToolStripMenuItem.Size = New System.Drawing.Size(139, 26)
+        Me.HistoryToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.HistoryToolStripMenuItem.Text = "History"
         '
         'SummaryToolStripMenuItem
@@ -120,7 +120,7 @@ Partial Class Main
         Me.pbLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbLoan.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pbLoan.Location = New System.Drawing.Point(424, 107)
-        Me.pbLoan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbLoan.Margin = New System.Windows.Forms.Padding(4)
         Me.pbLoan.Name = "pbLoan"
         Me.pbLoan.Size = New System.Drawing.Size(175, 145)
         Me.pbLoan.TabIndex = 5
@@ -133,7 +133,7 @@ Partial Class Main
         Me.pbWithdraw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbWithdraw.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pbWithdraw.Location = New System.Drawing.Point(669, 107)
-        Me.pbWithdraw.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbWithdraw.Margin = New System.Windows.Forms.Padding(4)
         Me.pbWithdraw.Name = "pbWithdraw"
         Me.pbWithdraw.Size = New System.Drawing.Size(175, 145)
         Me.pbWithdraw.TabIndex = 6
@@ -146,7 +146,7 @@ Partial Class Main
         Me.pbDeposit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbDeposit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pbDeposit.Location = New System.Drawing.Point(903, 107)
-        Me.pbDeposit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbDeposit.Margin = New System.Windows.Forms.Padding(4)
         Me.pbDeposit.Name = "pbDeposit"
         Me.pbDeposit.Size = New System.Drawing.Size(175, 145)
         Me.pbDeposit.TabIndex = 7
@@ -159,7 +159,7 @@ Partial Class Main
         Me.pbManage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbManage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pbManage.Location = New System.Drawing.Point(1135, 107)
-        Me.pbManage.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbManage.Margin = New System.Windows.Forms.Padding(4)
         Me.pbManage.Name = "pbManage"
         Me.pbManage.Size = New System.Drawing.Size(175, 145)
         Me.pbManage.TabIndex = 8
@@ -240,45 +240,6 @@ Partial Class Main
         'Timer1
         '
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(89, 353)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(531, 352)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 15
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(628, 353)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(531, 352)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 16
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(1167, 353)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(531, 352)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 17
-        Me.PictureBox3.TabStop = False
-        '
-        'LogoutToolStripMenuItem
-        '
-        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(241, 26)
-        Me.LogoutToolStripMenuItem.Text = "Logout"
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -286,9 +247,6 @@ Partial Class Main
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1800, 870)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.DateandMonth)
         Me.Controls.Add(Me.Time)
         Me.Controls.Add(Me.Label4)
@@ -301,7 +259,7 @@ Partial Class Main
         Me.Controls.Add(Me.pbLoan)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lending Management System"
@@ -311,9 +269,6 @@ Partial Class Main
         CType(Me.pbWithdraw, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbDeposit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbManage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -339,8 +294,5 @@ Partial Class Main
     Friend WithEvents Time As Label
     Friend WithEvents DateandMonth As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
 End Class

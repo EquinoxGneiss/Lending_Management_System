@@ -2,7 +2,7 @@
 Public Class Login
     Dim con As New OleDbConnection
     Dim dbProvider As String = "Provider=Microsoft.ACE.OLEDB.12.0;"
-    Dim dbSource As String = "Data Source=C:\Users\JJ\source\repos\EquinoxGniess\Lending_Management_System\Finals\accounts.accdb;"
+    Dim dbSource As String = "Data Source=C:\Users\gamed\source\repos\EquinoxGniess\Lending_Management_System\Finals\accounts.accdb"
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
@@ -23,13 +23,12 @@ Public Class Login
             con.Open()
         End If
 
-        Using login As New OleDbCommand("SELECT COUNT(*) FROM member WHERE [USERNAME] = @USERNAME OR [PASSWORD] = @PASSWORD", con)
+        Using login As New OleDbCommand("SELECT COUNT(*) FROM member WHERE [USERNAME] = @USERNAME AND [PASSWORD] = @PASSWORD", con)
             login.Parameters.AddWithValue("@USERNAME", OleDbType.VarChar).Value = txtUser.Text.Trim
             login.Parameters.AddWithValue("@PASSWORD", OleDbType.VarChar).Value = txtPass.Text.Trim
 
             Dim logincount = Convert.ToInt32(login.ExecuteScalar())
             If logincount > 0 Then
-                MessageBox.Show("Login Successfully!", "Logged In", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.Hide()
                 Main.Show()
             Else

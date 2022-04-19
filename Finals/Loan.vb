@@ -4,7 +4,7 @@ Public Class Loan
     Dim computePayment As Integer
     Dim con As New OleDbConnection
     Dim dbProvider As String = "Provider=Microsoft.ACE.OLEDB.12.0;"
-    Dim dbSource As String = "Data Source=C:\Users\JJ\source\repos\EquinoxGniess\Lending_Management_System\Finals\accounts.accdb;"
+    Dim dbSource As String = "Data Source=C:\Users\gamed\source\repos\EquinoxGniess\Lending_Management_System\Finals\accounts.accdb"
 
     Dim Balance As Double
     Dim Interest As Double

@@ -121,6 +121,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>accountsDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="accountsDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>accountsDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Loan.Designer.vb">
       <DependentUpon>Loan.vb</DependentUpon>
     </Compile>
@@ -232,6 +237,17 @@
     </None>
     <None Include="accountsDataSet1.xss">
       <DependentUpon>accountsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="accountsDataSet2.xsc">
+      <DependentUpon>accountsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="accountsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>accountsDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="accountsDataSet2.xss">
+      <DependentUpon>accountsDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Finals_TemporaryKey.pfx" />
     <None Include="My Project\Application.myapp">
